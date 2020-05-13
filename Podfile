@@ -1,0 +1,35 @@
+platform :ios, '11.0'
+
+target 'AWS-Ring' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'AWSAppSync'
+  pod 'AWSCognito'
+  pod 'AWSCognitoIdentityProvider'
+  pod 'AWSMobileClient'
+  pod 'AWSKinesis'
+  pod 'AWSKinesisVideo'
+  pod 'AWSKinesisVideoArchivedMedia'
+  pod 'AWSSNS'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Toast-Swift'
+  pod 'DropDown'
+  pod 'NVActivityIndicatorView'
+  pod 'YPImagePicker'
+  pod 'PromiseKit'
+  pod 'Material'
+  pod 'CRRefresh'
+  pod 'QRCodeReader.swift'
+  pod 'Socket.IO-Client-Swift'
+  pod 'WebRTC'
+  pod 'AWSRekognition'
+  pod 'AFDateHelper'
+  pod 'SDWebImage'
+  pod 'AWSS3'
+  pod 'SwiftEntryKit'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'Fusuma'
+  pod 'Kingfisher', '~> 5.0'
+end

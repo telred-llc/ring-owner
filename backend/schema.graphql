@@ -1,0 +1,42 @@
+type User @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  username: String
+  registered: Boolean
+  deviceToken: String
+  awsSNSEnpointARN: String
+  cameras: [String!]
+  guests: [Guest] @connection
+}
+
+type Camera @model {
+  id: ID!
+  name: String
+  channel: String
+}
+
+type RequestStreaming @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  cameraId: ID
+  userId: ID
+  time: AWSDateTime
+}
+
+type DetectMotion @model {
+  cameraId: ID!
+  time: AWSDateTime
+  persons: [String]
+  objects: [String]
+}
+
+type GuestCollection @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  name: String!
+  guests: [Guest] @connection
+}
+
+type Guest @model @searchable {
+  id: ID!
+  name: String!
+  recognitionId: String
+  facePhotos: [String!]
+}
