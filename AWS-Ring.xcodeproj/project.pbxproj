@@ -21,7 +21,6 @@
 		851D940122589F1C0051A0D9 /* SchemeConstantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D93F722589F1B0051A0D9 /* SchemeConstantsService.swift */; };
 		851D940222589F1C0051A0D9 /* RoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D93F822589F1B0051A0D9 /* RoomService.swift */; };
 		851D940322589F1C0051A0D9 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D93F922589F1B0051A0D9 /* PermissionsService.swift */; };
-		85584ED823053D81002AE348 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 85584ED723053D81002AE348 /* awsconfiguration.json */; };
 		85584EDA2305577B002AE348 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85584ED92305577A002AE348 /* API.swift */; };
 		8558B83223090DE700EA08B4 /* AWSS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8558B83123090DE700EA08B4 /* AWSS3Manager.swift */; };
 		85AB754D230F9CD80037836C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AB754C230F9CD80037836C /* Presenter.swift */; };
@@ -96,7 +95,6 @@
 		851D93F722589F1B0051A0D9 /* SchemeConstantsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemeConstantsService.swift; sourceTree = "<group>"; };
 		851D93F822589F1B0051A0D9 /* RoomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomService.swift; sourceTree = "<group>"; };
 		851D93F922589F1B0051A0D9 /* PermissionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
-		85584ED723053D81002AE348 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		85584ED92305577A002AE348 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
 		8558B83123090DE700EA08B4 /* AWSS3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3Manager.swift; sourceTree = "<group>"; };
 		85AB754C230F9CD80037836C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 			children = (
 				B230CF8B237A65BB008774A1 /* SwiftUI */,
 				A0FE8F53221BCF630093EFD5 /* AWS-Ring.entitlements */,
-				85584ED723053D81002AE348 /* awsconfiguration.json */,
 				85584ED92305577A002AE348 /* API.swift */,
 				A07987ED221A58BC00EC4983 /* UItils */,
 				85CE4B38221411DF00FBF429 /* Share */,
@@ -653,7 +650,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85584ED823053D81002AE348 /* awsconfiguration.json in Resources */,
 				85CE4B3122140C8900FBF429 /* LaunchScreen.storyboard in Resources */,
 				85CE4B2E22140C8900FBF429 /* Assets.xcassets in Resources */,
 				85AB7551230F9F1A0037836C /* AddGuestDialog.xib in Resources */,
@@ -918,8 +914,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AWS-Ring/AWS-Ring.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H4C7478UQW;
 				INFOPLIST_FILE = "AWS-Ring/Info.plist";
@@ -930,7 +926,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.telred.ring.owner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Ring Owner Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/AWS-Ring/AWSRing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -944,8 +940,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AWS-Ring/AWS-Ring.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H4C7478UQW;
 				INFOPLIST_FILE = "AWS-Ring/Info.plist";
@@ -956,7 +952,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.telred.ring.owner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Ring Owner Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/AWS-Ring/AWSRing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
